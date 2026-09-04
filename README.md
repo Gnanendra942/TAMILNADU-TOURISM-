@@ -103,12 +103,17 @@ Handcrafted travel circuits with durations, destination counts, transparent pric
 
 ```text
 TAMILNADU-TOURISM-/
-├── README.md                          # Project documentation and guide
+├── .github/
+│   └── workflows/
+│       └── deploy.yml                 # Automated GitHub Pages deployment workflow
+├── .nojekyll                          # Disables Jekyll processing for raw static file hosting
+├── index.html                         # Root entry point for GitHub Pages / web servers
 ├── tamil-nadu-tourism (3) (1).html    # Complete standalone single-page web application
+├── README.md                          # Project documentation and guide
 └── .git/                              # Git version control repository
 ```
 
-> **Note**: The web application is bundled as a self-contained single-page file containing structure, styling, embedded assets, and client logic.
+> **Note**: The web application is bundled as a self-contained single-page file containing structure, styling, embedded assets, and client logic. `index.html` serves as the root document for web servers and GitHub Pages.
 
 ---
 
@@ -150,6 +155,17 @@ Then visit [`http://localhost:8000/tamil-nadu-tourism%20(3)%20(1).html`](http://
 ```bash
 npx -y serve .
 ```
+
+---
+
+### Option 3: Automatic GitHub Pages Deployment
+
+The repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) configured to deploy to GitHub Pages automatically:
+
+1. Push changes to the `main` branch.
+2. In your repository on GitHub, navigate to **Settings** > **Pages**.
+3. Under **Build and deployment** > **Source**, select **GitHub Actions**.
+4. The site will automatically build and publish to `https://<your-username>.github.io/<repo-name>/`.
 
 ---
 
