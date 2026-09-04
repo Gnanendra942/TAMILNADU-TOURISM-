@@ -2,11 +2,14 @@
 
 > **Discover the Soul of Tamil Nadu** — An immersive, interactive travel discovery platform showcasing ancient living temples, mist-clad Nilgiri hill stations, golden coastal towns, wildlife reserves, and rich cultural heritage.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_Website-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://gnanendra942.github.io/TAMILNADU-TOURISM-/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![No Dependencies](https://img.shields.io/badge/Dependencies-Zero-brightgreen?style=for-the-badge)](https://en.wikipedia.org/wiki/Vanilla_software)
 [![Responsive](https://img.shields.io/badge/Design-Responsive-blueviolet?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+
+🔗 **Live Website**: [https://gnanendra942.github.io/TAMILNADU-TOURISM-/](https://gnanendra942.github.io/TAMILNADU-TOURISM-/)
 
 ---
 
