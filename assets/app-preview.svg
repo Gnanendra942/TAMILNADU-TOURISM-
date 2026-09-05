@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="480">
+  <defs>
+    <radialGradient id="mockupBg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#1f0710" />
+      <stop offset="50%" stop-color="#110308" />
+      <stop offset="100%" stop-color="#070003" />
+    </radialGradient>
+
+    <linearGradient id="windowBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#8a1538" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#c17a3d" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3d1421" />
+      <stop offset="100%" stop-color="#16040a" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1a38" />
+      <stop offset="100%" stop-color="#0f0714" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c2c2d" />
+      <stop offset="100%" stop-color="#081012" />
+    </linearGradient>
+
+    <linearGradient id="sweepShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <style>
+    .shimmer-rect {
+      animation: sweep 6s infinite linear;
+    }
+    @keyframes sweep {
+      0% { transform: translateX(-960px) skewX(-20deg); }
+      50%, 100% { transform: translateX(1100px) skewX(-20deg); }
+    }
+    .pulse-badge {
+      animation: ping 2s infinite ease-in-out;
+    }
+    @keyframes ping {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; filter: drop-shadow(0 0 5px #50e3c2); }
+    }
+  </style>
+
+  <!-- Window Container with Drop Shadow -->
+  <rect x="20" y="20" width="920" height="440" rx="16" fill="url(#mockupBg)" stroke="url(#windowBorder)" stroke-width="1.5" filter="url(#shadow)" />
+
+  <!-- macOS Window Header Bar -->
+  <path d="M20,20 Q20,36 36,36 L904,36 Q920,36 920,20 Z" fill="#140207" />
+  <rect x="20" y="20" width="920" height="42" rx="16" fill="#18040b" />
+  <rect x="20" y="46" width="920" height="16" fill="#18040b" />
+  <line x1="20" y1="62" x2="940" y2="62" stroke="#d4af37" stroke-opacity="0.2" stroke-width="1" />
+
+  <!-- Window Controls (Red, Yellow, Green) -->
+  <circle cx="44" cy="41" r="5.5" fill="#ff5f56" />
+  <circle cx="62" cy="41" r="5.5" fill="#ffbd2e" />
+  <circle cx="80" cy="41" r="5.5" fill="#27c93f" />
+
+  <!-- Browser Address Bar -->
+  <rect x="210" y="30" width="540" height="24" rx="12" fill="#0d0206" stroke="#d4af37" stroke-opacity="0.3" stroke-width="0.8" />
+  <g transform="translate(222, 36)">
+    <!-- Lock Icon -->
+    <rect x="0" y="4" width="8" height="6" rx="1.5" fill="#50e3c2" />
+    <path d="M2,4 L2,2.5 A2,2 0 0 1 6,2.5 L6,4" fill="none" stroke="#50e3c2" stroke-width="1" />
+  </g>
+  <text x="238" y="46" fill="#ffe699" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="11" opacity="0.9">https://gnanendra942.github.io/TAMILNADU-TOURISM-/</text>
+  <rect x="705" y="34" width="36" height="16" rx="8" fill="#8a1538" fill-opacity="0.6" />
+  <text x="723" y="45" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">LIVE</text>
+
+  <!-- App Hero Section Mockup -->
+  <!-- Subtle Constellation Stars in Background -->
+  <g fill="#d4af37" opacity="0.4">
+    <circle cx="100" cy="110" r="1.5" />
+    <circle cx="160" cy="140" r="1" />
+    <circle cx="280" cy="95" r="2" />
+    <circle cx="750" cy="115" r="1.8" />
+    <circle cx="840" cy="145" r="1.2" />
+    <line x1="100" y1="110" x2="160" y2="140" stroke="#d4af37" stroke-opacity="0.15" stroke-width="0.7" />
+    <line x1="750" y1="115" x2="840" y2="145" stroke="#d4af37" stroke-opacity="0.15" stroke-width="0.7" />
+  </g>
+
+  <!-- App Brand in Mockup -->
+  <text x="480" y="105" fill="#f7d070" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="900" letter-spacing="3" text-anchor="middle">
+    TAMIL NADU TOURISM
+  </text>
+  <text x="480" y="125" fill="#e0c2ab" font-family="sans-serif" font-size="10.5" letter-spacing="1.5" text-anchor="middle">
+    DISCOVER ANCIENT HERITAGE • MOUNTAINS • SACRED WATERWAYS
+  </text>
+
+  <!-- Simulated Predictive Search Bar -->
+  <rect x="290" y="142" width="380" height="36" rx="18" fill="#140207" stroke="#d4af37" stroke-opacity="0.5" stroke-width="1.2" />
+  <text x="315" y="165" fill="#999" font-family="sans-serif" font-size="12">🔍 Search destinations, districts, temples...</text>
+  <rect x="585" y="148" width="75" height="24" rx="12" fill="#8a1538" />
+  <text x="622" y="164" fill="#ffffff" font-family="sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Explore</text>
+
+  <!-- Simulated 3 Destination Cards -->
+  <!-- Card 1: Madurai -->
+  <g transform="translate(60, 205)">
+    <rect x="0" y="0" width="250" height="215" rx="14" fill="url(#cardGrad1)" stroke="#d4af37" stroke-opacity="0.3" stroke-width="1" />
+    <!-- Image placeholder simulation with gopuram pattern -->
+    <rect x="10" y="10" width="230" height="110" rx="10" fill="#2d0a18" />
+    <path d="M125,25 L145,55 L105,55 Z M95,55 L155,55 L165,95 L85,95 Z" fill="#d4af37" opacity="0.2" />
+    <rect x="20" y="20" width="70" height="20" rx="10" fill="#8a1538" />
+    <text x="55" y="34" fill="#ffe699" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">SPIRITUAL</text>
+    <text x="18" y="145" fill="#ffe699" font-family="'Fraunces', Georgia, serif" font-size="17" font-weight="bold">Madurai</text>
+    <text x="18" y="162" fill="#d4af37" font-family="sans-serif" font-size="10" font-weight="bold">South Region • 2,500+ Yrs</text>
+    <text x="18" y="180" fill="#a8928c" font-family="sans-serif" font-size="9.5">Meenakshi Amman Temple, Thirumalai Nayakkar Palace...</text>
+    <rect x="18" y="193" width="60" height="16" rx="8" fill="#d4af37" fill-opacity="0.15" stroke="#d4af37" stroke-width="0.5" />
+    <text x="48" y="204.5" fill="#ffe699" font-family="sans-serif" font-size="8.5" text-anchor="middle">Details →</text>
+  </g>
+
+  <!-- Card 2: Ooty -->
+  <g transform="translate(355, 205)">
+    <rect x="0" y="0" width="250" height="215" rx="14" fill="url(#cardGrad2)" stroke="#d4af37" stroke-opacity="0.4" stroke-width="1.2" />
+    <!-- Image placeholder simulation with hill mountain curve -->
+    <rect x="10" y="10" width="230" height="110" rx="10" fill="#1b251f" />
+    <path d="M10,120 Q70,50 130,85 T240,120 Z" fill="#2e5038" opacity="0.6" />
+    <rect x="20" y="20" width="80" height="20" rx="10" fill="#2d5e3f" />
+    <text x="60" y="34" fill="#88f2b2" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">HILL STATION</text>
+    <text x="18" y="145" fill="#ffe699" font-family="'Fraunces', Georgia, serif" font-size="17" font-weight="bold">Ooty</text>
+    <text x="18" y="162" fill="#d4af37" font-family="sans-serif" font-size="10" font-weight="bold">West Region • 2,240m Elev</text>
+    <text x="18" y="180" fill="#a8928c" font-family="sans-serif" font-size="9.5">UNESCO Mountain Railway, Tea Gardens, Doddabetta...</text>
+    <rect x="18" y="193" width="60" height="16" rx="8" fill="#d4af37" fill-opacity="0.15" stroke="#d4af37" stroke-width="0.5" />
+    <text x="48" y="204.5" fill="#ffe699" font-family="sans-serif" font-size="8.5" text-anchor="middle">Details →</text>
+  </g>
+
+  <!-- Card 3: Kanyakumari -->
+  <g transform="translate(650, 205)">
+    <rect x="0" y="0" width="250" height="215" rx="14" fill="url(#cardGrad3)" stroke="#d4af37" stroke-opacity="0.3" stroke-width="1" />
+    <!-- Image placeholder simulation with ocean wave curve -->
+    <rect x="10" y="10" width="230" height="110" rx="10" fill="#0d232e" />
+    <path d="M10,105 Q70,90 120,100 T240,95 L240,120 L10,120 Z" fill="#1b4d66" opacity="0.5" />
+    <rect x="20" y="20" width="88" height="20" rx="10" fill="#1a5276" />
+    <text x="64" y="34" fill="#7ed6df" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">COASTAL END</text>
+    <text x="18" y="145" fill="#ffe699" font-family="'Fraunces', Georgia, serif" font-size="17" font-weight="bold">Kanyakumari</text>
+    <text x="18" y="162" fill="#d4af37" font-family="sans-serif" font-size="10" font-weight="bold">South Region • Triveni Sangam</text>
+    <text x="18" y="180" fill="#a8928c" font-family="sans-serif" font-size="9.5">Vivekananda Rock Memorial, Thiruvalluvar Statue...</text>
+    <rect x="18" y="193" width="60" height="16" rx="8" fill="#d4af37" fill-opacity="0.15" stroke="#d4af37" stroke-width="0.5" />
+    <text x="48" y="204.5" fill="#ffe699" font-family="sans-serif" font-size="8.5" text-anchor="middle">Details →</text>
+  </g>
+
+  <!-- Sweeping Ambient Shine -->
+  <g clip-path="url(#windowClip)">
+    <rect class="shimmer-rect" x="0" y="0" width="160" height="480" fill="url(#sweepShine)" />
+  </g>
+</svg>

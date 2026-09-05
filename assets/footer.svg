@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 120" width="100%" height="120">
+  <defs>
+    <radialGradient id="footerBg" cx="50%" cy="100%" r="90%">
+      <stop offset="0%" stop-color="#2a0815" />
+      <stop offset="60%" stop-color="#140207" />
+      <stop offset="100%" stop-color="#080104" />
+    </radialGradient>
+
+    <linearGradient id="footerGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a1538" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#c17a3d" />
+    </linearGradient>
+
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a1538" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#8a1538" stop-opacity="0.3" />
+    </linearGradient>
+
+    <filter id="fGlow" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .pulse-heart {
+      animation: pulseH 1.8s ease-in-out infinite;
+      transform-origin: 480px 48px;
+    }
+    @keyframes pulseH {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.25); filter: drop-shadow(0 0 5px #e74c3c); }
+    }
+  </style>
+
+  <!-- Container -->
+  <rect x="0" y="0" width="960" height="120" rx="16" fill="url(#footerBg)" stroke="#d4af37" stroke-opacity="0.25" stroke-width="1.2" />
+
+  <!-- Flowing Wave Lines -->
+  <path d="M0,60 Q240,20 480,60 T960,60 L960,120 L0,120 Z" fill="url(#waveGrad1)" />
+
+  <!-- Top Accent Border -->
+  <line x1="100" y1="1" x2="860" y2="1" stroke="url(#footerGold)" stroke-width="2" filter="url(#fGlow)" />
+
+  <!-- Center Text -->
+  <text x="480" y="52" fill="#ffe699" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" letter-spacing="2" text-anchor="middle">
+    TAMIL NADU • WHERE TRADITION IS ETERNAL
+  </text>
+  <text x="480" y="78" fill="#d2b49c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" letter-spacing="1.2" text-anchor="middle">
+    Crafted with dedication celebrating Tamil culture, ancient heritage, and breathtaking landscapes
+  </text>
+  <text x="480" y="98" fill="#a07d6a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" text-anchor="middle">
+    Live Demo: gnanendra942.github.io/TAMILNADU-TOURISM- • MIT License
+  </text>
+</svg>

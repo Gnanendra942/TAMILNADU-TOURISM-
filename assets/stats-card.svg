@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 160" width="100%" height="160">
+  <defs>
+    <radialGradient id="cardBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1f0710" />
+      <stop offset="100%" stop-color="#0a0104" />
+    </radialGradient>
+
+    <linearGradient id="glowBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.7">
+        <animate attributeName="stop-color" values="#d4af37;#c17a3d;#8a1538;#d4af37" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#8a1538" stop-opacity="0.3">
+        <animate attributeName="stop-color" values="#8a1538;#d4af37;#c17a3d;#8a1538" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#c17a3d" stop-opacity="0.7">
+        <animate attributeName="stop-color" values="#c17a3d;#8a1538;#d4af37;#c17a3d" dur="5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe699" />
+      <stop offset="100%" stop-color="#d4af37" />
+    </linearGradient>
+
+    <filter id="metricGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .metric-box {
+      transition: transform 0.3s ease;
+    }
+    .metric-num {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 800;
+      fill: url(#goldText);
+      filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+    }
+    .metric-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      fill: #e8c8b0;
+    }
+    .metric-sub {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 9.5px;
+      fill: #a88982;
+    }
+    .pulse-dot {
+      animation: pulseDot 2s infinite ease-in-out;
+    }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 0.4; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+  </style>
+
+  <!-- Container -->
+  <rect x="6" y="6" width="948" height="148" rx="16" fill="url(#cardBg)" stroke="url(#glowBorder)" stroke-width="1.8" />
+
+  <!-- Grid of 5 Key Metrics -->
+
+  <!-- Metric 1: Destinations -->
+  <g class="metric-box" transform="translate(25, 20)">
+    <rect x="0" y="0" width="168" height="108" rx="12" fill="#14030a" stroke="#d4af37" stroke-opacity="0.2" stroke-width="1" />
+    <text x="84" y="38" class="metric-num" font-size="28" text-anchor="middle">12+</text>
+    <text x="84" y="66" class="metric-label" text-anchor="middle">Destinations</text>
+    <text x="84" y="85" class="metric-sub" text-anchor="middle">Curated &amp; Filterable</text>
+    <circle cx="84" cy="98" r="2" fill="#d4af37" class="pulse-dot" />
+  </g>
+
+  <!-- Metric 2: Geographic Zones -->
+  <g class="metric-box" transform="translate(210, 20)">
+    <rect x="0" y="0" width="168" height="108" rx="12" fill="#14030a" stroke="#d4af37" stroke-opacity="0.2" stroke-width="1" />
+    <text x="84" y="38" class="metric-num" font-size="28" text-anchor="middle">5 Zones</text>
+    <text x="84" y="66" class="metric-label" text-anchor="middle">Regional Map</text>
+    <text x="84" y="85" class="metric-sub" text-anchor="middle">Interactive SVG Vector</text>
+    <circle cx="84" cy="98" r="2" fill="#50e3c2" class="pulse-dot" />
+  </g>
+
+  <!-- Metric 3: Handcrafted Tours -->
+  <g class="metric-box" transform="translate(395, 20)">
+    <rect x="0" y="0" width="168" height="108" rx="12" fill="#14030a" stroke="#d4af37" stroke-opacity="0.2" stroke-width="1" />
+    <text x="84" y="38" class="metric-num" font-size="28" text-anchor="middle">6 Circuits</text>
+    <text x="84" y="66" class="metric-label" text-anchor="middle">Tour Packages</text>
+    <text x="84" y="85" class="metric-sub" text-anchor="middle">Handcrafted Itineraries</text>
+    <circle cx="84" cy="98" r="2" fill="#f5a623" class="pulse-dot" />
+  </g>
+
+  <!-- Metric 4: Zero Dependencies -->
+  <g class="metric-box" transform="translate(580, 20)">
+    <rect x="0" y="0" width="168" height="108" rx="12" fill="#14030a" stroke="#d4af37" stroke-opacity="0.2" stroke-width="1" />
+    <text x="84" y="38" class="metric-num" font-size="28" text-anchor="middle">0 DEPS</text>
+    <text x="84" y="66" class="metric-label" text-anchor="middle">Pure Vanilla</text>
+    <text x="84" y="85" class="metric-sub" text-anchor="middle">HTML5 • CSS3 • JS</text>
+    <circle cx="84" cy="98" r="2" fill="#7ed321" class="pulse-dot" />
+  </g>
+
+  <!-- Metric 5: Performance & FPS -->
+  <g class="metric-box" transform="translate(765, 20)">
+    <rect x="0" y="0" width="168" height="108" rx="12" fill="#14030a" stroke="#d4af37" stroke-opacity="0.2" stroke-width="1" />
+    <text x="84" y="38" class="metric-num" font-size="28" text-anchor="middle">60 FPS</text>
+    <text x="84" y="66" class="metric-label" text-anchor="middle">Fluid Motion</text>
+    <text x="84" y="85" class="metric-sub" text-anchor="middle">Canvas Particles &amp; Veil</text>
+    <circle cx="84" cy="98" r="2" fill="#bd10e0" class="pulse-dot" />
+  </g>
+</svg>

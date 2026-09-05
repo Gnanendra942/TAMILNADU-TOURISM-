@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" width="100%" height="24">
+  <defs>
+    <linearGradient id="dividerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a1538" stop-opacity="0" />
+      <stop offset="25%" stop-color="#8a1538" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#f7d070" stop-opacity="1">
+        <animate attributeName="stop-color" values="#f7d070; #ffffff; #d4af37; #f7d070" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="75%" stop-color="#c17a3d" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#c17a3d" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="divGlow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .pulse-star {
+      animation: pulseStar 2.5s ease-in-out infinite;
+      transform-origin: 450px 12px;
+    }
+    @keyframes pulseStar {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.35); opacity: 1; filter: drop-shadow(0 0 6px #ffe699); }
+    }
+    .flow-line {
+      stroke-dasharray: 20, 10;
+      animation: lineFlow 10s linear infinite;
+    }
+    @keyframes lineFlow {
+      to { stroke-dashoffset: -300; }
+    }
+  </style>
+
+  <!-- Animated Glowing Divider Line -->
+  <line x1="50" y1="12" x2="430" y2="12" stroke="url(#dividerGrad)" stroke-width="2" stroke-linecap="round" filter="url(#divGlow)" />
+  <line x1="470" y1="12" x2="850" y2="12" stroke="url(#dividerGrad)" stroke-width="2" stroke-linecap="round" filter="url(#divGlow)" />
+
+  <!-- Center Decorative Traditional Diamond & Petals -->
+  <g class="pulse-star" filter="url(#divGlow)">
+    <!-- Outer Diamond -->
+    <polygon points="450,4 458,12 450,20 442,12" fill="#d4af37" />
+    <!-- Inner Core -->
+    <circle cx="450" cy="12" r="2.5" fill="#8a1538" />
+  </g>
+  <circle cx="438" cy="12" r="1.5" fill="#ffe699" opacity="0.8" />
+  <circle cx="462" cy="12" r="1.5" fill="#ffe699" opacity="0.8" />
+</svg>
